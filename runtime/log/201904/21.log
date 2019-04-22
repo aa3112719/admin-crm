@@ -1,0 +1,732 @@
+---------------------------------------------------------------
+[ 2019-04-21T11:15:24+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/base/login
+[ info ] localhost/72crm/index.php/admin/base/login [运行时间：0.233255s][吞吐率：4.29req/s] [内存消耗：3,193.29kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.004218s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'base',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin1',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Base->login[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: authkey[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common\controller\Common.php:31]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019584s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.018758s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `username` = 'admin'  AND `type` = 1 LIMIT 1 [ RunTime:0.001934s ]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:27+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/base/login
+[ info ] localhost/72crm/index.php/admin/base/login [运行时间：0.372444s][吞吐率：2.68req/s] [内存消耗：3,385.48kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000768s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'base',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15611112222',
+  'password' => 'admin1',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Base->login[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: authkey[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common\controller\Common.php:31]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义数组索引: menusList[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\User.php:431]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007439s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.038293s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `username` = '15611112222'  AND `type` = 1 LIMIT 1 [ RunTime:0.003634s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.032342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.060240s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.007206s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.004409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_menu` [ RunTime:0.027110s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_menu` WHERE  `status` = 1 ORDER BY `sort` ASC [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_rule` [ RunTime:0.031035s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001236s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] UPDATE `5kcrm_admin_user`  SET `authkey`='63f07019135e8a983bc69a836c247995',`authkey_time`=1555902927  WHERE  `id` = 1 [ RunTime:0.003894s ]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:28+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/index/authList
+[ info ] localhost/72crm/index.php/admin/index/authList [运行时间：0.300470s][吞吐率：3.33req/s] [内存消耗：3,422.80kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.001473s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'authList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.005617s ]
+[ info ] [ RUN ] app\admin\controller\Index->authList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003771s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.030842s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.001433s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.027887s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.027010s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_rule` [ RunTime:0.027364s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000821s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:28+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/taskList
+[ info ] localhost/72crm/index.php/oa/index/taskList [运行时间：0.208440s][吞吐率：4.80req/s] [内存消耗：3,216.13kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000997s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'taskList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.017079s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->taskList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004810s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.032293s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_task` [ RunTime:0.030593s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_task` WHERE  (  ( main_user_id = 1 or create_user_id =1 or owner_user_id like "%,1,%") and status=1 and ishidden=0 ) LIMIT 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT `task_id`,`name`,`stop_time`,`priority`,`create_time`,`pid` FROM `5kcrm_task` WHERE  (   ( main_user_id = 1 or create_user_id =1 or owner_user_id like "%,1,%") and status=1 and ishidden=0 ) [ RunTime:0.000690s ]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:29+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/system/index
+[ info ] localhost/72crm/index.php/admin/system/index [运行时间：0.091523s][吞吐率：10.93req/s] [内存消耗：2,071.31kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000882s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [2]Cannot modify header information - headers already sent[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common\behavior\AuthenticateBehavior.php:17]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:30+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/event
+[ info ] localhost/72crm/index.php/oa/index/event [运行时间：0.401536s][吞吐率：2.49req/s] [内存消耗：3,215.20kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000896s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'event',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '25',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'start_time' => '1555816528.524',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.016514s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->event[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011130s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.139141s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.002284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.083874s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_oa_event` WHERE  `start_time` <= 1555902928.524  AND `end_time` >= 1555816528.524  AND (  `owner_user_ids` LIKE '%,1,%' OR `create_user_id` = 1 ) [ RunTime:0.007007s ]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:30+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/eventList
+[ info ] localhost/72crm/index.php/oa/index/eventList [运行时间：0.332684s][吞吐率：3.01req/s] [内存消耗：3,260.91kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.001701s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'eventList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.036705s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->eventList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020542s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.039609s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.002549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.041616s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_oa_event` WHERE  (  ( ( start_time BETWEEN 1554048000 AND 1556639999 ) AND ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) OR ( ( end_time BETWEEN 1554048000 AND 1556639999 ) AND  ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) OR ( start_time < 1554048000 AND end_time > 1556639999 AND ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) ) [ RunTime:0.012286s ]
+[ error ] [8]未定义数组索引: start_time[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php:224]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:31+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/index
+[ info ] localhost/72crm/index.php/oa/index/index [运行时间：0.603701s][吞吐率：1.66req/s] [内存消耗：3,624.87kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.004107s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.025363s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028965s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.045022s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.003562s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.047489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.040785s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.002153s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.002112s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_action_log` [ RunTime:0.045291s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_action_log` WHERE  (   ( module_name = "oa" )  and ( action_delete != 1 ) and ( user_id IN (1,2,4,5,3,6) or join_user_ids like "%,1,%" or structure_ids like "%,1,%" ) ) ORDER BY `create_time` DESC LIMIT 0,15 [ RunTime:0.002437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_admin_action_log` WHERE  (   ( module_name = "oa" )  and ( action_delete != 1 ) and ( user_id IN (1,2,4,5,3,6) or join_user_ids like "%,1,%" or structure_ids like "%,1,%" ) ) LIMIT 1 [ RunTime:0.004170s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.005221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.051770s ]
+[ sql ] [ SQL ] SELECT `event_id`,`title`,`remark`,`start_time`,`end_time`,`owner_user_ids` FROM `5kcrm_oa_event` WHERE  (  event_id = 1 ) LIMIT 1 [ RunTime:0.007050s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`realname`,`thumb_img` FROM `5kcrm_admin_user` WHERE  `id` IN (1,2,3) [ RunTime:0.007213s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SELECT `event_id`,`title`,`remark`,`start_time`,`end_time`,`owner_user_ids` FROM `5kcrm_oa_event` WHERE  (  event_id = 1 ) LIMIT 1 [ RunTime:0.001816s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`realname`,`thumb_img` FROM `5kcrm_admin_user` WHERE  `id` IN (1,2,3) [ RunTime:0.004595s ]
+[ error ] [2048]Declaration of app\admin\model\File::createData() should be compatible with app\admin\model\Common::createData($param)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\File.php:379]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:33+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/system/index
+[ info ] localhost/72crm/index.php/admin/system/index [运行时间：0.115096s][吞吐率：8.69req/s] [内存消耗：2,071.31kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000773s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [2]Cannot modify header information - headers already sent[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common\behavior\AuthenticateBehavior.php:17]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:46+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/eventList
+[ info ] localhost/72crm/index.php/oa/index/eventList [运行时间：0.175369s][吞吐率：5.70req/s] [内存消耗：3,260.88kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000553s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'eventList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.012999s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->eventList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002431s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.041263s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.002961s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.030351s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_oa_event` WHERE  (  ( ( start_time BETWEEN 1554048000 AND 1556639999 ) AND ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) OR ( ( end_time BETWEEN 1554048000 AND 1556639999 ) AND  ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) OR ( start_time < 1554048000 AND end_time > 1556639999 AND ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) ) [ RunTime:0.000692s ]
+[ error ] [8]未定义数组索引: start_time[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php:224]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:46+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/taskList
+[ info ] localhost/72crm/index.php/oa/index/taskList [运行时间：0.217201s][吞吐率：4.60req/s] [内存消耗：3,216.13kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000724s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'taskList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.010725s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->taskList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008835s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.041030s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.001171s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_task` [ RunTime:0.023480s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_task` WHERE  (  ( main_user_id = 1 or create_user_id =1 or owner_user_id like "%,1,%") and status=1 and ishidden=0 ) LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT `task_id`,`name`,`stop_time`,`priority`,`create_time`,`pid` FROM `5kcrm_task` WHERE  (   ( main_user_id = 1 or create_user_id =1 or owner_user_id like "%,1,%") and status=1 and ishidden=0 ) [ RunTime:0.001671s ]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:47+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/event
+[ info ] localhost/72crm/index.php/oa/index/event [运行时间：0.249863s][吞吐率：4.00req/s] [内存消耗：3,215.20kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000428s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'event',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '25',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'start_time' => '1555816546.724',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.032330s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->event[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003500s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.031706s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.025794s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_oa_event` WHERE  `start_time` <= 1555902946.724  AND `end_time` >= 1555816546.724  AND (  `owner_user_ids` LIKE '%,1,%' OR `create_user_id` = 1 ) [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2019-04-21T11:15:47+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/index
+[ info ] localhost/72crm/index.php/oa/index/index [运行时间：0.202100s][吞吐率：4.95req/s] [内存消耗：3,624.93kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000487s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=84i6prv0l0gor5giccbspob530',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '63f07019135e8a983bc69a836c247995',
+  'dnt' => '1',
+  'sessionid' => '84i6prv0l0gor5giccbspob530',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.006860s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011584s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.030589s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.016654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.016348s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_action_log` [ RunTime:0.017858s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_action_log` WHERE  (   ( module_name = "oa" )  and ( action_delete != 1 ) and ( user_id IN (1,2,4,5,3,6) or join_user_ids like "%,1,%" or structure_ids like "%,1,%" ) ) ORDER BY `create_time` DESC LIMIT 0,15 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_admin_action_log` WHERE  (   ( module_name = "oa" )  and ( action_delete != 1 ) and ( user_id IN (1,2,4,5,3,6) or join_user_ids like "%,1,%" or structure_ids like "%,1,%" ) ) LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.014558s ]
+[ sql ] [ SQL ] SELECT `event_id`,`title`,`remark`,`start_time`,`end_time`,`owner_user_ids` FROM `5kcrm_oa_event` WHERE  (  event_id = 1 ) LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`realname`,`thumb_img` FROM `5kcrm_admin_user` WHERE  `id` IN (1,2,3) [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT `event_id`,`title`,`remark`,`start_time`,`end_time`,`owner_user_ids` FROM `5kcrm_oa_event` WHERE  (  event_id = 1 ) LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`realname`,`thumb_img` FROM `5kcrm_admin_user` WHERE  `id` IN (1,2,3) [ RunTime:0.000425s ]
+[ error ] [2048]Declaration of app\admin\model\File::createData() should be compatible with app\admin\model\Common::createData($param)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\File.php:379]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]

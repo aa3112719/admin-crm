@@ -1,0 +1,2424 @@
+---------------------------------------------------------------
+[ 2019-04-20T09:42:32+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/system/index
+[ info ] localhost/72crm/index.php/admin/system/index [运行时间：0.102522s][吞吐率：9.75req/s] [内存消耗：2,071.02kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.003742s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [2]Cannot modify header information - headers already sent[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common\behavior\AuthenticateBehavior.php:17]
+---------------------------------------------------------------
+[ 2019-04-20T09:42:32+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/users/read
+[ info ] localhost/72crm/index.php/admin/users/read [运行时间：0.259715s][吞吐率：3.85req/s] [内存消耗：3,428.41kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.003902s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'users',
+    2 => 'read',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.002384s ]
+[ info ] [ RUN ] app\admin\controller\Users->read[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Users.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012402s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.031831s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.022079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.026637s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.001367s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_structure` [ RunTime:0.021537s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `5kcrm_admin_structure` WHERE  (  id = 1 ) LIMIT 1 [ RunTime:0.000505s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义数组索引: id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Users.php:71]
+---------------------------------------------------------------
+[ 2019-04-20T09:42:32+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/index/authList
+[ info ] localhost/72crm/index.php/admin/index/authList [运行时间：0.264261s][吞吐率：3.78req/s] [内存消耗：3,422.76kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.003768s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'authList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.002554s ]
+[ info ] [ RUN ] app\admin\controller\Index->authList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012197s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.032262s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.021827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.026856s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.001173s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_rule` [ RunTime:0.023946s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000372s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+---------------------------------------------------------------
+[ 2019-04-20T09:42:32+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/taskList
+[ info ] localhost/72crm/index.php/oa/index/taskList [运行时间：0.192109s][吞吐率：5.21req/s] [内存消耗：3,216.13kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000440s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'taskList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=01vnkcv43g3o99ueoiadtbfit6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.013540s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->taskList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003127s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.028783s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.001233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_task` [ RunTime:0.048982s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_task` WHERE  (  ( main_user_id = 1 or create_user_id =1 or owner_user_id like "%,1,%") and status=1 and ishidden=0 ) LIMIT 1 [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT `task_id`,`name`,`stop_time`,`priority`,`create_time`,`pid` FROM `5kcrm_task` WHERE  (   ( main_user_id = 1 or create_user_id =1 or owner_user_id like "%,1,%") and status=1 and ishidden=0 ) [ RunTime:0.000766s ]
+---------------------------------------------------------------
+[ 2019-04-20T09:42:32+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/event
+[ info ] localhost/72crm/index.php/oa/index/event [运行时间：0.241715s][吞吐率：4.14req/s] [内存消耗：3,215.13kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000572s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'event',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=01vnkcv43g3o99ueoiadtbfit6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '23',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'start_time' => '1555724552.4',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.014374s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->event[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002748s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.043704s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.036007s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_oa_event` WHERE  `start_time` <= 1555810952.4  AND `end_time` >= 1555724552.4  AND (  `owner_user_ids` LIKE '%,1,%' OR `create_user_id` = 1 ) [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2019-04-20T09:42:32+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/eventList
+[ info ] localhost/72crm/index.php/oa/index/eventList [运行时间：0.327216s][吞吐率：3.06req/s] [内存消耗：3,260.88kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000449s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'eventList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=01vnkcv43g3o99ueoiadtbfit6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.015783s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->eventList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022501s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.036164s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.054149s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_oa_event` WHERE  (  ( ( start_time BETWEEN 1554048000 AND 1556639999 ) AND ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) OR ( ( end_time BETWEEN 1554048000 AND 1556639999 ) AND  ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) OR ( start_time < 1554048000 AND end_time > 1556639999 AND ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) ) [ RunTime:0.002779s ]
+[ error ] [8]未定义数组索引: start_time[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php:224]
+---------------------------------------------------------------
+[ 2019-04-20T09:42:33+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/index
+[ info ] localhost/72crm/index.php/oa/index/index [运行时间：0.209567s][吞吐率：4.77req/s] [内存消耗：3,624.93kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000732s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=01vnkcv43g3o99ueoiadtbfit6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.013568s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011389s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.014413s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.018675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.019597s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_action_log` [ RunTime:0.020448s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_action_log` WHERE  (   ( module_name = "oa" )  and ( action_delete != 1 ) and ( user_id IN (1,2,4,5,3,6) or join_user_ids like "%,1,%" or structure_ids like "%,1,%" ) ) ORDER BY `create_time` DESC LIMIT 0,15 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_admin_action_log` WHERE  (   ( module_name = "oa" )  and ( action_delete != 1 ) and ( user_id IN (1,2,4,5,3,6) or join_user_ids like "%,1,%" or structure_ids like "%,1,%" ) ) LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.019333s ]
+[ sql ] [ SQL ] SELECT `event_id`,`title`,`remark`,`start_time`,`end_time`,`owner_user_ids` FROM `5kcrm_oa_event` WHERE  (  event_id = 1 ) LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`realname`,`thumb_img` FROM `5kcrm_admin_user` WHERE  `id` IN (1,2,3) [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `event_id`,`title`,`remark`,`start_time`,`end_time`,`owner_user_ids` FROM `5kcrm_oa_event` WHERE  (  event_id = 1 ) LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`realname`,`thumb_img` FROM `5kcrm_admin_user` WHERE  `id` IN (1,2,3) [ RunTime:0.000520s ]
+[ error ] [2048]Declaration of app\admin\model\File::createData() should be compatible with app\admin\model\Common::createData($param)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\File.php:379]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:30+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/users/read
+[ info ] localhost/72crm/index.php/admin/users/read [运行时间：0.323187s][吞吐率：3.09req/s] [内存消耗：3,428.41kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.004107s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'users',
+    2 => 'read',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.003744s ]
+[ info ] [ RUN ] app\admin\controller\Users->read[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Users.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048141s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.052557s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.009442s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.020572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.022171s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.004985s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_structure` [ RunTime:0.021330s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `5kcrm_admin_structure` WHERE  (  id = 1 ) LIMIT 1 [ RunTime:0.001798s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义数组索引: id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Users.php:71]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:30+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/index/authList
+[ info ] localhost/72crm/index.php/admin/index/authList [运行时间：0.324925s][吞吐率：3.08req/s] [内存消耗：3,422.76kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.003970s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'authList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.002461s ]
+[ info ] [ RUN ] app\admin\controller\Index->authList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048056s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.052153s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.009823s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.021047s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.021340s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.005365s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_rule` [ RunTime:0.023932s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000403s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:30+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/taskList
+[ info ] localhost/72crm/index.php/oa/index/taskList [运行时间：0.131182s][吞吐率：7.62req/s] [内存消耗：3,216.13kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000438s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'taskList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.009822s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->taskList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004574s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.019296s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_task` [ RunTime:0.028653s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_task` WHERE  (  ( main_user_id = 1 or create_user_id =1 or owner_user_id like "%,1,%") and status=1 and ishidden=0 ) LIMIT 1 [ RunTime:0.002300s ]
+[ sql ] [ SQL ] SELECT `task_id`,`name`,`stop_time`,`priority`,`create_time`,`pid` FROM `5kcrm_task` WHERE  (   ( main_user_id = 1 or create_user_id =1 or owner_user_id like "%,1,%") and status=1 and ishidden=0 ) [ RunTime:0.000448s ]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:30+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/event
+[ info ] localhost/72crm/index.php/oa/index/event [运行时间：0.159440s][吞吐率：6.27req/s] [内存消耗：3,215.20kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000599s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'event',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '25',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'start_time' => '1555743450.639',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.010762s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->event[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002465s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.027709s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.019406s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_oa_event` WHERE  `start_time` <= 1555829850.639  AND `end_time` >= 1555743450.639  AND (  `owner_user_ids` LIKE '%,1,%' OR `create_user_id` = 1 ) [ RunTime:0.001460s ]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:32+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/index
+[ info ] localhost/72crm/index.php/oa/index/index [运行时间：0.203480s][吞吐率：4.91req/s] [内存消耗：3,624.93kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000322s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '22',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '0',
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.008250s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012087s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.025154s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.016038s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.016101s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_action_log` [ RunTime:0.015087s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_action_log` WHERE  (   ( module_name = "oa" )  and ( action_delete != 1 ) and ( user_id IN (1,2,4,5,3,6) or join_user_ids like "%,1,%" or structure_ids like "%,1,%" ) ) ORDER BY `create_time` DESC LIMIT 0,15 [ RunTime:0.002939s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_admin_action_log` WHERE  (   ( module_name = "oa" )  and ( action_delete != 1 ) and ( user_id IN (1,2,4,5,3,6) or join_user_ids like "%,1,%" or structure_ids like "%,1,%" ) ) LIMIT 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.017105s ]
+[ sql ] [ SQL ] SELECT `event_id`,`title`,`remark`,`start_time`,`end_time`,`owner_user_ids` FROM `5kcrm_oa_event` WHERE  (  event_id = 1 ) LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`realname`,`thumb_img` FROM `5kcrm_admin_user` WHERE  `id` IN (1,2,3) [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `event_id`,`title`,`remark`,`start_time`,`end_time`,`owner_user_ids` FROM `5kcrm_oa_event` WHERE  (  event_id = 1 ) LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`realname`,`thumb_img` FROM `5kcrm_admin_user` WHERE  `id` IN (1,2,3) [ RunTime:0.000441s ]
+[ error ] [2048]Declaration of app\admin\model\File::createData() should be compatible with app\admin\model\Common::createData($param)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\File.php:379]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:32+08:00 ] 0.0.0.0 POST /72crm/index.php/oa/index/eventList
+[ info ] localhost/72crm/index.php/oa/index/eventList [运行时间：0.238361s][吞吐率：4.20req/s] [内存消耗：3,260.88kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000321s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oa',
+    1 => 'index',
+    2 => 'eventList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/oa\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.008371s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\oa\controller\Index->eventList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012065s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.025620s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_oa_event` [ RunTime:0.017494s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_oa_event` WHERE  (  ( ( start_time BETWEEN 1554048000 AND 1556639999 ) AND ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) OR ( ( end_time BETWEEN 1554048000 AND 1556639999 ) AND  ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) OR ( start_time < 1554048000 AND end_time > 1556639999 AND ( create_user_id = 1 or owner_user_ids like "%,1,%" ) ) ) [ RunTime:0.000701s ]
+[ error ] [8]未定义数组索引: start_time[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\oa\controller\Index.php:224]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:32+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/system/index
+[ info ] localhost/72crm/index.php/admin/system/index [运行时间：0.060677s][吞吐率：16.48req/s] [内存消耗：2,071.02kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000803s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [2]Cannot modify header information - headers already sent[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common\behavior\AuthenticateBehavior.php:17]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:40+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/business/statusList
+[ info ] localhost/72crm/index.php/crm/business/statusList [运行时间：0.220264s][吞吐率：4.54req/s] [内存消耗：3,280.53kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000432s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'business',
+    2 => 'statusList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.007296s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Business->statusList[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Business.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013859s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.037127s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business_type` [ RunTime:0.046286s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_business_type` WHERE  `structure_id` LIKE '%,1,%'  AND `status` = 1 OR `structure_id` = '' [ RunTime:0.005191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business_status` [ RunTime:0.033757s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_business_status` WHERE  `type_id` = 1 ORDER BY `order_id` ASC [ RunTime:0.001667s ]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:41+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/index/achievementData
+[ info ] localhost/72crm/index.php/crm/index/achievementData [运行时间：0.419750s][吞吐率：2.38req/s] [内存消耗：3,461.28kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000417s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'index',
+    2 => 'achievementData',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '67',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 
+  array (
+    0 => '1',
+  ),
+  'start_time' => '1546272000',
+  'end_time' => '1554048000',
+  'status' => '2',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.012167s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Index->achievementData[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002111s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.045447s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.024623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.023280s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_contract` [ RunTime:0.037659s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1546272000 AND 1556553600  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_receivables` [ RunTime:0.052401s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1546272000 AND 1556553600  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_achievement` [ RunTime:0.028477s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_achievement` WHERE  `status` = 2  AND `year` IN (2019)  AND (  (( `obj_id` IN (1) AND `type` = 3 ) OR ( `obj_id` IN (-1) AND `type` = 2 ) ) ) [ RunTime:0.000729s ]
+[ error ] [8]未定义数组索引: structure_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Index.php:129]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:41+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/index/index
+[ info ] localhost/72crm/index.php/crm/index/index [运行时间：0.680361s][吞吐率：1.47req/s] [内存消耗：3,500.23kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000440s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '27',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 
+  array (
+    0 => '1',
+  ),
+  'type' => 'month',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.015563s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Index->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013637s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.031205s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002015s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.022210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.026944s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_customer` [ RunTime:0.022056s ]
+[ sql ] [ SQL ] SELECT COUNT(customer_id) AS tp_count FROM `5kcrm_crm_customer` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1554048000 AND 1556639999 LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_contacts` [ RunTime:0.025249s ]
+[ sql ] [ SQL ] SELECT COUNT(contacts_id) AS tp_count FROM `5kcrm_crm_contacts` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1554048000 AND 1556639999 LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business` [ RunTime:0.024595s ]
+[ sql ] [ SQL ] SELECT COUNT(business_id) AS tp_count FROM `5kcrm_crm_business` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1554048000 AND 1556639999 LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_contract` [ RunTime:0.027013s ]
+[ sql ] [ SQL ] SELECT COUNT(contract_id) AS tp_count FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1554048000 AND 1556639999 LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_receivables` [ RunTime:0.027437s ]
+[ sql ] [ SQL ] SELECT COUNT(receivables_id) AS tp_count FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1554048000 AND 1556639999 LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_record` [ RunTime:0.040047s ]
+[ sql ] [ SQL ] SELECT COUNT(record_id) AS tp_count FROM `5kcrm_admin_record` WHERE  `create_time` BETWEEN 1554048000 AND 1556639999  AND `create_user_id` IN (1) LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT COUNT(business_id) AS tp_count FROM `5kcrm_crm_business` WHERE  `create_user_id` IN (1)  AND `owner_user_id` IN (1)  AND `status_time` BETWEEN 1554048000 AND 1556639999 LIMIT 1 [ RunTime:0.000441s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:41+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/index/funnel
+[ info ] localhost/72crm/index.php/crm/index/funnel [运行时间：0.580481s][吞吐率：1.72req/s] [内存消耗：3,537.38kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000367s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'index',
+    2 => 'funnel',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '68',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 
+  array (
+    0 => '1',
+  ),
+  'start_time' => '1554048000',
+  'end_time' => '1555689600',
+  'type_id' => '1',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.012366s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Index->funnel[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003116s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.043864s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.001102s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.024728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.028999s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business_type` [ RunTime:0.023497s ]
+[ sql ] [ SQL ] SELECT `type_id` FROM `5kcrm_crm_business_type` ORDER BY `type_id` ASC LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business_status` [ RunTime:0.020722s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_business_status` WHERE  `type_id` = 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business` [ RunTime:0.021397s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND (  status_id=1 ) LIMIT 1 [ RunTime:0.001336s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND (  status_id=2 ) LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND `type_id` = 1  AND `status_id` = 4 LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND `type_id` = 1  AND `status_id` = 4 LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND `type_id` = 1  AND `status_id` = 5 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND `type_id` = 1  AND `status_id` = 5 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND `type_id` = 1  AND `status_id` = 6 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND `type_id` = 1  AND `status_id` = 6 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND `type_id` = 1  AND `status_id` = 7 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_business` WHERE  `create_time` BETWEEN 1554048000 AND 1555776000  AND `owner_user_id` IN (1)  AND `type_id` = 1  AND `status_id` = 7 LIMIT 1 [ RunTime:0.000435s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:41+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/index/saletrend
+[ info ] localhost/72crm/index.php/crm/index/saletrend [运行时间：0.214535s][吞吐率：4.66req/s] [内存消耗：3,562.95kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.001592s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'index',
+    2 => 'saletrend',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '26',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 
+  array (
+    0 => '1',
+  ),
+  'year' => '2019',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.006460s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Index->saletrend[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013798s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.017633s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.017770s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.019709s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_contract` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1546272000 AND 1548950399  AND `check_status` = 2 LIMIT 1 [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_receivables` [ RunTime:0.017848s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-01-01' AND '2019-01-31'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1548950400 AND 1551369599  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-02-01' AND '2019-02-28'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1551369600 AND 1554047999  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-03-01' AND '2019-03-31'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1554048000 AND 1556639999  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-04-01' AND '2019-04-30'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1556640000 AND 1559318399  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-05-01' AND '2019-05-31'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1559318400 AND 1561910399  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-06-01' AND '2019-06-30'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1561910400 AND 1564588799  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-07-01' AND '2019-07-31'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1564588800 AND 1567267199  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-08-01' AND '2019-08-31'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1567267200 AND 1569859199  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-09-01' AND '2019-09-30'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1569859200 AND 1572537599  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-10-01' AND '2019-10-31'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1572537600 AND 1575129599  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-11-01' AND '2019-11-30'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_contract` WHERE  `owner_user_id` IN (1)  AND `create_time` BETWEEN 1575129600 AND 1577807999  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `5kcrm_crm_receivables` WHERE  `owner_user_id` IN (1)  AND `return_time` BETWEEN '2019-12-01' AND '2019-12-31'  AND `check_status` = 2 LIMIT 1 [ RunTime:0.000411s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:50+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/scene/index
+[ info ] localhost/72crm/index.php/admin/scene/index [运行时间：0.218479s][吞吐率：4.58req/s] [内存消耗：3,523.48kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000383s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'scene',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '18',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'types' => 'crm_customer',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.007726s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Scene->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Scene.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012611s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.026058s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.001416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene` [ RunTime:0.024171s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_scene` WHERE  `user_id` = 1  AND `is_hide` = 0  AND `types` = 'crm_customer' OR (  `types` = 'crm_customer'  AND `type` = 1 ) ORDER BY `order_id` ASC,`scene_id` ASC [ RunTime:0.001630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene_default` [ RunTime:0.035042s ]
+[ sql ] [ SQL ] SELECT `scene_id` FROM `5kcrm_admin_scene_default` WHERE  `types` = 'crm_customer'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.025158s ]
+[ sql ] [ SQL ] SELECT `field`,`name`,`form_type`,`setting` FROM `5kcrm_admin_field` WHERE  `types` IN ('','crm_customer')  AND `form_type` NOT IN ('file','form','checkbox','user','structure','business_status') OR `types` = '' ORDER BY `order_id` ASC,`field_id` ASC,`update_time` DESC [ RunTime:0.001998s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_scene` WHERE  `user_id` = 1  AND `is_hide` = 1  AND `types` = 'crm_customer' ORDER BY `order_id` ASC [ RunTime:0.001543s ]
+[ error ] [2048]Declaration of app\admin\model\Scene::getDataById() should be compatible with app\admin\model\Common::getDataById($id = '')[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Scene.php:438]
+[ error ] [8]未定义数组索引: unFormType[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:899]
+[ error ] [8]未定义数组索引: user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:910]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:50+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/scene/index
+[ info ] localhost/72crm/index.php/admin/scene/index [运行时间：0.324234s][吞吐率：3.08req/s] [内存消耗：3,523.48kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000423s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'scene',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '18',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'types' => 'crm_customer',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.010549s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Scene->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Scene.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012254s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.030496s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.001620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene` [ RunTime:0.032550s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_scene` WHERE  `user_id` = 1  AND `is_hide` = 0  AND `types` = 'crm_customer' OR (  `types` = 'crm_customer'  AND `type` = 1 ) ORDER BY `order_id` ASC,`scene_id` ASC [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene_default` [ RunTime:0.025171s ]
+[ sql ] [ SQL ] SELECT `scene_id` FROM `5kcrm_admin_scene_default` WHERE  `types` = 'crm_customer'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.002516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.023621s ]
+[ sql ] [ SQL ] SELECT `field`,`name`,`form_type`,`setting` FROM `5kcrm_admin_field` WHERE  `types` IN ('','crm_customer')  AND `form_type` NOT IN ('file','form','checkbox','user','structure','business_status') OR `types` = '' ORDER BY `order_id` ASC,`field_id` ASC,`update_time` DESC [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_scene` WHERE  `user_id` = 1  AND `is_hide` = 1  AND `types` = 'crm_customer' ORDER BY `order_id` ASC [ RunTime:0.000421s ]
+[ error ] [2048]Declaration of app\admin\model\Scene::getDataById() should be compatible with app\admin\model\Common::getDataById($id = '')[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Scene.php:438]
+[ error ] [8]未定义数组索引: unFormType[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:899]
+[ error ] [8]未定义数组索引: user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:910]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:50+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/field/getField
+[ info ] localhost/72crm/index.php/admin/field/getField [运行时间：0.190977s][吞吐率：5.24req/s] [内存消耗：3,818.11kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000354s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'field',
+    2 => 'getField',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '62',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'types' => 'crm_customer',
+  'module' => 'crm',
+  'action' => 'index',
+  'controller' => 'customer',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.013195s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Field->getField[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013269s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.016715s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.016065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.027008s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user_field` [ RunTime:0.017765s ]
+[ sql ] [ SQL ] SELECT `datas` FROM `5kcrm_admin_user_field` WHERE  `types` = 'crm_customer'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.016625s ]
+[ sql ] [ SQL ] SELECT `field`,`name`,`form_type` FROM `5kcrm_admin_field` WHERE  `types` IN ('','crm_customer')  AND `form_type` NOT IN ('file','form')  AND `field` NOT IN ('') ORDER BY `order_id` ASC,`field_id` ASC [ RunTime:0.000641s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义数组索引: types_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php:171]
+[ error ] [8]未定义数组索引: action_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php:272]
+[ error ] [2048]Declaration of app\admin\model\File::createData() should be compatible with app\admin\model\Common::createData($param)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\File.php:379]
+[ error ] [8]未定义数组索引: types_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:482]
+[ error ] [8]未定义数组索引: map[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:484]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:51+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/customer/index
+[ info ] localhost/72crm/index.php/crm/customer/index [运行时间：0.313940s][吞吐率：3.19req/s] [内存消耗：4,158.23kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000334s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'customer',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '23',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+  'search' => '',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.010889s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Customer->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Customer.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012398s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.016961s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene_default` [ RunTime:0.015391s ]
+[ sql ] [ SQL ] SELECT `scene_id` FROM `5kcrm_admin_scene_default` WHERE  `types` = 'customer'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_config` [ RunTime:0.018701s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_config` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.018427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.016139s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_rule` [ RunTime:0.015412s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'index'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.016746s ]
+[ sql ] [ SQL ] SELECT `field` FROM `5kcrm_admin_field` WHERE  `types` = 'crm_customer'  AND `form_type` = 'user' [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT `field` FROM `5kcrm_admin_field` WHERE  `types` = 'crm_customer'  AND `form_type` = 'structure' [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_customer` [ RunTime:0.015898s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_customer` `customer` WHERE  (  (  `customer`.`update_time` > 1555138670 OR (  `customer`.`deal_time` > 1553151470  AND `customer`.`deal_status` = '已成交' ) ) OR `customer`.`is_lock` = 1 )  AND (  `customer`.`owner_user_id` IN (1,2,4,5,3,6) OR (  `customer`.`ro_user_id` LIKE '%,1,%'  AND `customer`.`owner_user_id` <> '' )  OR (  `customer`.`rw_user_id` LIKE '%,1,%'  AND `customer`.`owner_user_id` <> '' ) ) ORDER BY `customer`.`update_time` DESC LIMIT 0,15 [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT COUNT(customer_id) AS tp_count FROM `5kcrm_crm_customer` `customer` WHERE  (  (  `customer`.`update_time` > 1555138670 OR (  `customer`.`deal_time` > 1553151470  AND `customer`.`deal_status` = '已成交' ) ) OR `customer`.`is_lock` = 1 )  AND (  `customer`.`owner_user_id` IN (1,2,4,5,3,6) OR (  `customer`.`ro_user_id` LIKE '%,1,%'  AND `customer`.`owner_user_id` <> '' )  OR (  `customer`.`rw_user_id` LIKE '%,1,%'  AND `customer`.`owner_user_id` <> '' ) ) LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_config` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'read'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.002165s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'update'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'delete'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business` [ RunTime:0.015639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `customer_id` = 2 LIMIT 1 [ RunTime:0.000539s ]
+[ error ] [8]未定义数组索引: scene_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:44]
+[ error ] [8]未定义数组索引: is_excel[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:45]
+[ error ] [8]未定义数组索引: is_excel[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:49]
+[ error ] [8]未定义数组索引: pageType[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Common.php:41]
+[ error ] [2048]Declaration of app\admin\model\Scene::getDataById() should be compatible with app\admin\model\Common::getDataById($id = '')[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Scene.php:438]
+[ error ] [8]未定义数组索引: ro_user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:68]
+[ error ] [8]未定义变量: where[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:207]
+[ error ] [2048]Declaration of app\crm\model\ConfigData::getData() should be compatible with think\Model::getData($name = NULL)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\ConfigData.php:61]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义数组索引: order_type[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:132]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:53+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/field/getField
+[ info ] localhost/72crm/index.php/admin/field/getField [运行时间：0.209639s][吞吐率：4.77req/s] [内存消耗：3,818.61kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000336s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'field',
+    2 => 'getField',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '61',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'types' => 'crm_customer',
+  'module' => 'crm',
+  'action' => 'pool',
+  'controller' => 'customer',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.011330s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Field->getField[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002213s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.021254s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.027331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.027388s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user_field` [ RunTime:0.020726s ]
+[ sql ] [ SQL ] SELECT `datas` FROM `5kcrm_admin_user_field` WHERE  `types` = 'crm_customer_pool'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.024885s ]
+[ sql ] [ SQL ] SELECT `field`,`name`,`form_type` FROM `5kcrm_admin_field` WHERE  `types` IN ('','crm_customer')  AND `form_type` NOT IN ('file','form')  AND `field` NOT IN ('owner_user_id') ORDER BY `order_id` ASC,`field_id` ASC [ RunTime:0.000717s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义数组索引: types_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php:171]
+[ error ] [8]未定义数组索引: action_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php:272]
+[ error ] [2048]Declaration of app\admin\model\File::createData() should be compatible with app\admin\model\Common::createData($param)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\File.php:379]
+[ error ] [8]未定义数组索引: types_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:482]
+[ error ] [8]未定义数组索引: map[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:484]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:54+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/customer/pool
+[ info ] localhost/72crm/index.php/crm/customer/pool [运行时间：0.320563s][吞吐率：3.12req/s] [内存消耗：4,123.34kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000522s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'customer',
+    2 => 'pool',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '23',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+  'search' => '',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.015717s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Customer->pool[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Customer.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002161s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.028003s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene_default` [ RunTime:0.020372s ]
+[ sql ] [ SQL ] SELECT `scene_id` FROM `5kcrm_admin_scene_default` WHERE  `types` = 'customer'  AND `user_id` IS NULL LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_config` [ RunTime:0.016649s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_config` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.016174s ]
+[ sql ] [ SQL ] SELECT `field` FROM `5kcrm_admin_field` WHERE  `types` = 'crm_customer'  AND `form_type` = 'user' [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT `field` FROM `5kcrm_admin_field` WHERE  `types` = 'crm_customer'  AND `form_type` = 'structure' [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_customer` [ RunTime:0.014902s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_customer` `customer` WHERE  (  `customer`.`owner_user_id` = 0 OR (  (  `customer`.`update_time` >= 1555138674  AND (  `customer`.`deal_time` < 1553151474  AND `customer`.`deal_status` = '未成交' ) )  AND `customer`.`is_lock` = 0 )  OR (  (  `customer`.`update_time` < 1555138674  AND (  `customer`.`deal_status` = '未成交' ) )  AND `customer`.`is_lock` = 0 ) ) ORDER BY `customer`.`update_time` DESC LIMIT 0,15 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT COUNT(customer_id) AS tp_count FROM `5kcrm_crm_customer` `customer` WHERE  (  `customer`.`owner_user_id` = 0 OR (  (  `customer`.`update_time` >= 1555138674  AND (  `customer`.`deal_time` < 1553151474  AND `customer`.`deal_status` = '未成交' ) )  AND `customer`.`is_lock` = 0 )  OR (  (  `customer`.`update_time` < 1555138674  AND (  `customer`.`deal_status` = '未成交' ) )  AND `customer`.`is_lock` = 0 ) ) LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_config` [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.016861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.016952s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_rule` [ RunTime:0.015545s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'read'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'update'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'delete'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 3 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 0 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business` [ RunTime:0.016060s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `customer_id` = 3 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `customer_id` = 1 LIMIT 1 [ RunTime:0.000283s ]
+[ error ] [8]未定义数组索引: user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:43]
+[ error ] [8]未定义数组索引: scene_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:44]
+[ error ] [8]未定义数组索引: is_excel[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:45]
+[ error ] [8]未定义数组索引: is_excel[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:49]
+[ error ] [8]未定义数组索引: pageType[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Common.php:41]
+[ error ] [2048]Declaration of app\admin\model\Scene::getDataById() should be compatible with app\admin\model\Common::getDataById($id = '')[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Scene.php:438]
+[ error ] [8]未定义数组索引: ro_user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:68]
+[ error ] [8]未定义变量: where[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:207]
+[ error ] [2048]Declaration of app\crm\model\ConfigData::getData() should be compatible with think\Model::getData($name = NULL)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\ConfigData.php:61]
+[ error ] [8]未定义数组索引: order_type[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:132]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义数组索引: thumb_img[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\User.php:714]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:55+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/scene/index
+[ info ] localhost/72crm/index.php/admin/scene/index [运行时间：0.195754s][吞吐率：5.11req/s] [内存消耗：3,523.49kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000330s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'scene',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '18',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'types' => 'crm_contacts',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.008347s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Scene->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Scene.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012108s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.028629s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene` [ RunTime:0.025363s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_scene` WHERE  `user_id` = 1  AND `is_hide` = 0  AND `types` = 'crm_contacts' OR (  `types` = 'crm_contacts'  AND `type` = 1 ) ORDER BY `order_id` ASC,`scene_id` ASC [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene_default` [ RunTime:0.020682s ]
+[ sql ] [ SQL ] SELECT `scene_id` FROM `5kcrm_admin_scene_default` WHERE  `types` = 'crm_contacts'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.019949s ]
+[ sql ] [ SQL ] SELECT `field`,`name`,`form_type`,`setting` FROM `5kcrm_admin_field` WHERE  `types` IN ('','crm_contacts')  AND `form_type` NOT IN ('file','form','checkbox','user','structure','business_status') OR `types` = '' ORDER BY `order_id` ASC,`field_id` ASC,`update_time` DESC [ RunTime:0.001572s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_scene` WHERE  `user_id` = 1  AND `is_hide` = 1  AND `types` = 'crm_contacts' ORDER BY `order_id` ASC [ RunTime:0.001425s ]
+[ error ] [2048]Declaration of app\admin\model\Scene::getDataById() should be compatible with app\admin\model\Common::getDataById($id = '')[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Scene.php:438]
+[ error ] [8]未定义数组索引: unFormType[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:899]
+[ error ] [8]未定义数组索引: user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:910]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:55+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/scene/index
+[ info ] localhost/72crm/index.php/admin/scene/index [运行时间：0.298495s][吞吐率：3.35req/s] [内存消耗：3,523.49kb] [文件加载：68]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000324s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'scene',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '18',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'types' => 'crm_contacts',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.011535s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Scene->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Scene.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012608s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.029980s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene` [ RunTime:0.025752s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_scene` WHERE  `user_id` = 1  AND `is_hide` = 0  AND `types` = 'crm_contacts' OR (  `types` = 'crm_contacts'  AND `type` = 1 ) ORDER BY `order_id` ASC,`scene_id` ASC [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene_default` [ RunTime:0.031324s ]
+[ sql ] [ SQL ] SELECT `scene_id` FROM `5kcrm_admin_scene_default` WHERE  `types` = 'crm_contacts'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.021153s ]
+[ sql ] [ SQL ] SELECT `field`,`name`,`form_type`,`setting` FROM `5kcrm_admin_field` WHERE  `types` IN ('','crm_contacts')  AND `form_type` NOT IN ('file','form','checkbox','user','structure','business_status') OR `types` = '' ORDER BY `order_id` ASC,`field_id` ASC,`update_time` DESC [ RunTime:0.002567s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_scene` WHERE  `user_id` = 1  AND `is_hide` = 1  AND `types` = 'crm_contacts' ORDER BY `order_id` ASC [ RunTime:0.000651s ]
+[ error ] [2048]Declaration of app\admin\model\Scene::getDataById() should be compatible with app\admin\model\Common::getDataById($id = '')[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Scene.php:438]
+[ error ] [8]未定义数组索引: unFormType[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:899]
+[ error ] [8]未定义数组索引: user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:910]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:55+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/field/getField
+[ info ] localhost/72crm/index.php/admin/field/getField [运行时间：0.218498s][吞吐率：4.58req/s] [内存消耗：3,818.98kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.001054s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'field',
+    2 => 'getField',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '62',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'types' => 'crm_contacts',
+  'module' => 'crm',
+  'action' => 'index',
+  'controller' => 'contacts',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.011072s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Field->getField[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002202s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.028102s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.021504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.019064s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user_field` [ RunTime:0.017984s ]
+[ sql ] [ SQL ] SELECT `datas` FROM `5kcrm_admin_user_field` WHERE  `types` = 'crm_contacts'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.017012s ]
+[ sql ] [ SQL ] SELECT `field`,`name`,`form_type` FROM `5kcrm_admin_field` WHERE  `types` IN ('','crm_contacts')  AND `form_type` NOT IN ('file','form')  AND `field` NOT IN ('') ORDER BY `order_id` ASC,`field_id` ASC [ RunTime:0.000558s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义数组索引: types_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php:171]
+[ error ] [8]未定义数组索引: action_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php:272]
+[ error ] [2048]Declaration of app\admin\model\File::createData() should be compatible with app\admin\model\Common::createData($param)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\File.php:379]
+[ error ] [8]未定义数组索引: types_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:482]
+[ error ] [8]未定义数组索引: map[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:484]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:55+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/contacts/index
+[ info ] localhost/72crm/index.php/crm/contacts/index [运行时间：0.268196s][吞吐率：3.73req/s] [内存消耗：3,968.89kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000327s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'contacts',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '23',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+  'search' => '',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.006623s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Contacts->index[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Contacts.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011542s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.018844s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene_default` [ RunTime:0.016478s ]
+[ sql ] [ SQL ] SELECT `scene_id` FROM `5kcrm_admin_scene_default` WHERE  `types` = 'contacts'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.015009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.014819s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_rule` [ RunTime:0.015976s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'contacts'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'index'  AND `level` = 3  AND `pid` = 22 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.015333s ]
+[ sql ] [ SQL ] SELECT `field` FROM `5kcrm_admin_field` WHERE  `types` = 'crm_contacts'  AND `form_type` = 'user' [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT `field` FROM `5kcrm_admin_field` WHERE  `types` = 'crm_contacts'  AND `form_type` = 'structure' [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'contacts'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'read'  AND `level` = 3  AND `pid` = 22 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'contacts'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'update'  AND `level` = 3  AND `pid` = 22 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'contacts'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'delete'  AND `level` = 3  AND `pid` = 22 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_contacts` [ RunTime:0.015280s ]
+[ sql ] [ SQL ] SELECT `contacts`.*,customer.name as customer_name FROM `5kcrm_crm_contacts` `contacts` LEFT JOIN `5kcrm_crm_customer` `customer` ON `contacts`.`customer_id`=`customer`.`customer_id` WHERE  `contacts`.`owner_user_id` IN (1,2,4,5,3,6) ORDER BY `contacts`.`update_time` DESC LIMIT 0,15 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT COUNT(contacts_id) AS tp_count FROM `5kcrm_crm_contacts` `contacts` LEFT JOIN `5kcrm_crm_customer` `customer` ON `contacts`.`customer_id`=`customer`.`customer_id` WHERE  `contacts`.`owner_user_id` IN (1,2,4,5,3,6) LIMIT 1 [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 3 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 3 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000433s ]
+[ error ] [8]未定义数组索引: scene_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Contacts.php:40]
+[ error ] [8]未定义数组索引: pageType[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Common.php:41]
+[ error ] [2048]Declaration of app\admin\model\Scene::getDataById() should be compatible with app\admin\model\Common::getDataById($id = '')[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Scene.php:438]
+[ error ] [8]未定义变量: where[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:207]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义数组索引: order_type[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Contacts.php:85]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+---------------------------------------------------------------
+[ 2019-04-20T14:57:59+08:00 ] 0.0.0.0 POST /72crm/index.php/admin/field/getField
+[ info ] localhost/72crm/index.php/admin/field/getField [运行时间：0.225755s][吞吐率：4.43req/s] [内存消耗：3,818.61kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.000341s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'field',
+    2 => 'getField',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '61',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'types' => 'crm_customer',
+  'module' => 'crm',
+  'action' => 'pool',
+  'controller' => 'customer',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/admin\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.009463s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Field->getField[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011993s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.019350s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.020580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.027902s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user_field` [ RunTime:0.027139s ]
+[ sql ] [ SQL ] SELECT `datas` FROM `5kcrm_admin_user_field` WHERE  `types` = 'crm_customer_pool'  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.020728s ]
+[ sql ] [ SQL ] SELECT `field`,`name`,`form_type` FROM `5kcrm_admin_field` WHERE  `types` IN ('','crm_customer')  AND `form_type` NOT IN ('file','form')  AND `field` NOT IN ('owner_user_id') ORDER BY `order_id` ASC,`field_id` ASC [ RunTime:0.000921s ]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义数组索引: types_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php:171]
+[ error ] [8]未定义数组索引: action_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\controller\Field.php:272]
+[ error ] [2048]Declaration of app\admin\model\File::createData() should be compatible with app\admin\model\Common::createData($param)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\File.php:379]
+[ error ] [8]未定义数组索引: types_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:482]
+[ error ] [8]未定义数组索引: map[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Field.php:484]
+---------------------------------------------------------------
+[ 2019-04-20T14:58:00+08:00 ] 0.0.0.0 POST /72crm/index.php/crm/customer/pool
+[ info ] localhost/72crm/index.php/crm/customer/pool [运行时间：0.359697s][吞吐率：2.78req/s] [内存消耗：4,123.34kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitConfigBehavior @app_init [ RunTime:0.001491s ]
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'crm',
+    1 => 'customer',
+    2 => 'pool',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=mgatvshf8pgvid00acn81i57m0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/72crm/index.html',
+  'authkey' => '5cbfb1e4ec53c76f77e3b43a360f10f6',
+  'dnt' => '1',
+  'sessionid' => 'emgr9b9umkjoafrimk35nksjs1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'origin' => 'http://localhost',
+  'content-length' => '23',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+  'search' => '',
+)
+[ info ] [ LANG ] D:\Appcation\phpstudy\PHPTutorial\WWW\72crm/application/crm\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AuthenticateBehavior @check_auth [ RunTime:0.012770s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\crm\controller\Customer->pool[ D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\controller\Customer.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003774s ] mysql:host=localhost;port=3306;dbname=yui;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_user` [ RunTime:0.040985s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1  AND `status` IN (1,2) LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_scene_default` [ RunTime:0.018224s ]
+[ sql ] [ SQL ] SELECT `scene_id` FROM `5kcrm_admin_scene_default` WHERE  `types` = 'customer'  AND `user_id` IS NULL LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_config` [ RunTime:0.017397s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_config` [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_field` [ RunTime:0.015459s ]
+[ sql ] [ SQL ] SELECT `field` FROM `5kcrm_admin_field` WHERE  `types` = 'crm_customer'  AND `form_type` = 'user' [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `field` FROM `5kcrm_admin_field` WHERE  `types` = 'crm_customer'  AND `form_type` = 'structure' [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_customer` [ RunTime:0.015634s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_customer` `customer` WHERE  (  `customer`.`owner_user_id` = 0 OR (  (  `customer`.`update_time` >= 1555138679  AND (  `customer`.`deal_time` < 1553151479  AND `customer`.`deal_status` = '未成交' ) )  AND `customer`.`is_lock` = 0 )  OR (  (  `customer`.`update_time` < 1555138679  AND (  `customer`.`deal_status` = '未成交' ) )  AND `customer`.`is_lock` = 0 ) ) ORDER BY `customer`.`update_time` DESC LIMIT 0,15 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT COUNT(customer_id) AS tp_count FROM `5kcrm_crm_customer` `customer` WHERE  (  `customer`.`owner_user_id` = 0 OR (  (  `customer`.`update_time` >= 1555138679  AND (  `customer`.`deal_time` < 1553151479  AND `customer`.`deal_status` = '未成交' ) )  AND `customer`.`is_lock` = 0 )  OR (  (  `customer`.`update_time` < 1555138679  AND (  `customer`.`deal_status` = '未成交' ) )  AND `customer`.`is_lock` = 0 ) ) LIMIT 1 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_crm_config` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_access` [ RunTime:0.019904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_group` [ RunTime:0.030589s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_admin_rule` [ RunTime:0.018341s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'read'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.001035s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'update'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_rule` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'crm'  AND `level` = 1 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'customer'  AND `level` = 2  AND `pid` = 1 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_rule` WHERE  `name` = 'delete'  AND `level` = 3  AND `pid` = 10 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `5kcrm_admin_access` WHERE  `group_id` = 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `5kcrm_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT `5kcrm_admin_group`.*,pivot.user_id AS pivot__user_id,pivot.group_id AS pivot__group_id FROM `5kcrm_admin_group` INNER JOIN `5kcrm_admin_access` `pivot` ON `pivot`.`group_id`=`5kcrm_admin_group`.`id` WHERE  `pivot`.`user_id` = 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT `types` FROM `5kcrm_admin_group` WHERE  `id` IN (1) GROUP BY `types` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 0 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 3 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 6 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 2 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 4 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `id` FROM `5kcrm_admin_user` WHERE  `parent_id` = 5 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 3 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 0 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `5kcrm_crm_business` [ RunTime:0.016478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `customer_id` = 3 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT `user`.`id`,`username`,`img`,`thumb_img`,`realname`,`parent_id`,structure.name as structure_name,structure.id as structure_id FROM `5kcrm_admin_user` `user` LEFT JOIN `5kcrm_admin_structure` `structure` ON `structure`.`id`=`user`.`structure_id` WHERE  `user`.`id` = 1 LIMIT 1 [ RunTime:0.001217s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `5kcrm_crm_business` WHERE  `customer_id` = 1 LIMIT 1 [ RunTime:0.000449s ]
+[ error ] [8]未定义数组索引: user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:43]
+[ error ] [8]未定义数组索引: scene_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:44]
+[ error ] [8]未定义数组索引: is_excel[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:45]
+[ error ] [8]未定义数组索引: is_excel[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:49]
+[ error ] [8]未定义数组索引: pageType[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Common.php:41]
+[ error ] [2048]Declaration of app\admin\model\Scene::getDataById() should be compatible with app\admin\model\Common::getDataById($id = '')[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Scene.php:438]
+[ error ] [8]未定义数组索引: ro_user_id[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:68]
+[ error ] [8]未定义变量: where[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:207]
+[ error ] [2048]Declaration of app\crm\model\ConfigData::getData() should be compatible with think\Model::getData($name = NULL)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\ConfigData.php:61]
+[ error ] [8]未定义数组索引: order_type[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\crm\model\Customer.php:132]
+[ error ] [2048]Declaration of app\admin\model\Group::delDataById() should be compatible with app\admin\model\Common::delDataById($id = '', $delSon = false)[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\Group.php:123]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义变量: sub[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\common.php:450]
+[ error ] [8]未定义数组索引: thumb_img[D:\Appcation\phpstudy\PHPTutorial\WWW\72crm\application\admin\model\User.php:714]
